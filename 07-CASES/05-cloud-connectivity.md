@@ -1,22 +1,22 @@
-# Case 05 — Avid PAM/MAM Proof of Concept on Google Cloud
+# Case 05 — PAM/MAM Proof of Concept on Google Cloud
 
 ## Context
 
-Proof of Concept (PoC) for evaluating the deployment of components of an Avid PAM/MAM ecosystem in Google Cloud, integrated with an existing on-premises environment.
+Proof of Concept (PoC) for evaluating the deployment of components of a **PAM/MAM media-management ecosystem** in Google Cloud, integrated with an existing on-premises environment.
 
 The initiative required adapting the cloud environment to application requirements that were still aligned with a traditional bare-metal/server deployment model.
 
 ## Architecture
 
-The PoC architecture connected a Google Cloud VPC to the on-premises environment through **Cloud Interconnect**. The cloud side hosted application instances, while the on-premises environment retained the existing Avid-related infrastructure and NEXIS storage.
+The PoC architecture connected a Google Cloud VPC to the on-premises environment through **Cloud Interconnect**. The cloud side hosted application instances, while the on-premises environment retained the existing media infrastructure and shared storage platform.
 
 The reference architecture included:
 
 - Google Cloud VPC;
-- Compute instances for Avid-related components;
+- Compute instances for application components;
 - Cloud Interconnect connectivity;
-- on-premises Avid environment;
-- Avid NEXIS storage;
+- on-premises media infrastructure;
+- enterprise media storage;
 - hybrid communication between cloud and on-premises components.
 
 ## Technical Challenge
@@ -29,7 +29,7 @@ The standard image catalog incorporated requirements from security, infrastructu
 
 ## My Role
 
-As an Infrastructure/DevOps/Networks analyst, I was responsible for the infrastructure side of the PoC, working together with the technical team representing Avid in Brazil, **CIS Group**, to make the cloud environment compatible with the application requirements.
+As an Infrastructure/DevOps/Networks analyst, I was responsible for the infrastructure side of the PoC, working with the vendor's technical representatives to make the cloud environment compatible with the application requirements.
 
 My activities included:
 
@@ -58,8 +58,6 @@ The cloud instances therefore had to reproduce the required partitioning model r
 This required translating a physical-server requirement into a cloud infrastructure implementation while preserving the application's expected storage structure.
 
 ## Implementation Flow
-
-The implementation can be summarized as:
 
 ```text
 Application requirements
@@ -128,6 +126,6 @@ The role of infrastructure was therefore not merely to provision cloud resources
 
 ## Confidentiality
 
-This case is intentionally generalized. Company names, internal hostnames, IP addresses, detailed configurations, proprietary architecture information and operational identifiers have been omitted.
+This case is intentionally generalized. Company names, people, internal hostnames, IP addresses, detailed configurations, proprietary architecture information and operational identifiers have been omitted.
 
 The architecture diagram is presented as a high-level representation of the PoC and does not expose confidential configuration details.
