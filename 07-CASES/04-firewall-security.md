@@ -1,8 +1,8 @@
-# Case 04 — Firewall, Virtualization & Application Resilience — CREA-RJ
+# Case 04 — Firewall, Virtualization & Application Resilience
 
 ## Context
 
-During my experience at CREA-RJ, I worked on infrastructure initiatives involving network security, virtualization, monitoring and application availability.
+During an earlier infrastructure engagement, I worked on initiatives involving network security, virtualization, monitoring and application availability.
 
 The environment had constraints around physical-server investment while development teams needed greater agility to provision environments for new solutions. At the same time, the main user-facing application database experienced instability during periods of high simultaneous demand.
 
@@ -11,7 +11,7 @@ The environment had constraints around physical-server investment while developm
 My activities covered infrastructure implementation and configuration, including:
 
 - firewall rule configuration with `iptables`;
-- Proof of Concept (PoC) with pfSense for a branch office in Niterói;
+- Proof of Concept (PoC) with pfSense for a branch office;
 - implementation of VMware ESXi as a virtualization platform;
 - creation of separate development/homologation and production environments;
 - network segmentation between environments;
@@ -29,7 +29,7 @@ The work involved translating required communications into appropriate network a
 
 ### pfSense PoC
 
-I also conducted a Proof of Concept with **pfSense** for a branch office in Niterói.
+I also conducted a Proof of Concept with **pfSense** for a branch office.
 
 The objective was to evaluate an alternative firewall/network-security platform for the branch environment and validate its applicability before a broader implementation.
 
@@ -171,6 +171,6 @@ In this environment, virtualization addressed physical-server constraints, netwo
 
 ## Confidentiality
 
-This case is intentionally generalized. Internal hostnames, IP addresses, detailed firewall rules, application/database names, credentials, topology details and other proprietary information have been omitted.
+This case is intentionally generalized. Company names, people, internal hostnames, IP addresses, detailed firewall rules, application/database names, credentials, topology details and other proprietary information have been omitted.
 
 The architecture shown is conceptual and does not reproduce the original production configuration.
