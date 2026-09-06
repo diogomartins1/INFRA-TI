@@ -22,40 +22,9 @@ Demonstrar capacidade de compreender ambientes de infraestrutura, analisar requi
 
 ## Technical Cases
 
-### 01 — Network Implementation
-Experiência prática com configuração de conectividade, interfaces, BGP, port-channel e ACLs em ambientes de infraestrutura.
+Esta seção reúne cinco cases técnicos que demonstram experiência prática em implementação, configuração, modernização, cloud e planejamento de infraestrutura.
 
-→ [Read the case](07-CASES/01-network-troubleshooting.md)
-
-### 02 — BGP & Routing
-Configuração de conectividade e aplicação de conceitos de routing em ambientes corporativos.
-
-→ [Read the case](07-CASES/02-bgp-routing.md)
-
-### 03 — Cisco ACI & Datacenter
-Implementação e planejamento de conectividade em ambientes Cisco Nexus e Cisco ACI.
-
-→ [Read the case](07-CASES/03-cisco-aci-datacenter.md)
-
-### 04 — Firewall & Network Security
-Configuração de políticas, zonas e fluxos de acesso em diferentes plataformas de firewall.
-
-→ [Read the case](07-CASES/04-firewall-security.md)
-
-### 05 — Cloud Connectivity
-PoC de infraestrutura para aplicação Avid PAM/MAM em Google Cloud, integrada a ambiente on-premises.
-
-→ [Read the case](07-CASES/05-cloud-connectivity.md)
-
-### 06 — Storage Modernization
-Modernização de storage e evolução da conectividade de datacenter para uma arquitetura integrada ao Cisco ACI.
-
-→ [Read the case](07-CASES/06-infrastructure-modernization.md)
-
-### 07 — Datacenter Migration to Cisco ACI
-Planejamento de migração de conectividade para um novo datacenter baseado em Cisco ACI, incluindo expansão de uplinks e mapeamento de servidores e storage.
-
-→ [Read the case](07-CASES/07-datacenter-migration.md)
+→ [View Technical Cases](07-CASES/README.md)
 
 ## Working Approach
 
@@ -65,7 +34,7 @@ Quando troubleshooting ou RCA não fez parte da responsabilidade direta, o case 
 
 ## Confidentiality
 
-Os casos são apresentados em nível não confidencial. Nomes de empresas, endereços, IPs, topologias proprietárias, identificadores de equipamentos, informações operacionais e demais dados sensíveis são omitidos ou generalizados.
+Os casos são apresentados em nível não confidencial. Nomes de empresas, pessoas, endereços, IPs, topologias proprietárias, identificadores de equipamentos, informações operacionais e demais dados sensíveis são omitidos ou generalizados.
 
 Os exemplos representam conhecimentos, responsabilidades e contextos técnicos reais ou baseados em experiências práticas, sem reproduzir configurações ou informações proprietárias.
 
