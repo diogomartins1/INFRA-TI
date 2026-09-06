@@ -2,24 +2,24 @@
 
 ## Context
 
-Infrastructure modernization initiative for the migration of connectivity supporting the JB DC iNEWS environment to a new datacenter environment, referred to in the planning as **JB CED**.
+Infrastructure modernization initiative for migrating connectivity from a legacy datacenter environment to a new and more robust datacenter architecture based on **Cisco ACI and Nexus**.
 
-The objective was to move the connectivity toward a newer and more robust datacenter architecture based on **Cisco ACI and Nexus**, while maintaining the required communication with the existing enterprise network and presidential environment.
+The objective was to move the connectivity toward the new architecture while maintaining the required communication with the existing enterprise network and critical business environments.
 
 ## Starting Point
 
-The existing environment had connectivity distributed across different network layers, including Nexus 5000 switches in the JB DC iNEWS environment and Nexus 7000 devices acting as part of the existing network/gateway architecture.
+The existing environment had connectivity distributed across different network layers, including legacy Nexus switching and gateway infrastructure.
 
 The planning material identified an existing uplink structure and several server/storage dependencies that needed to be understood before migration.
 
 Examples included:
 
-- Nexus 5000 connectivity;
-- Nexus 7000 uplinks;
+- legacy Nexus switching connectivity;
+- upstream gateway infrastructure;
 - existing server management and data interfaces;
 - iSCSI storage connectivity;
-- existing network segments already available in the corporate Nexus environment;
-- downstream connectivity toward the presidential environment.
+- existing network segments already available in the enterprise network;
+- downstream connectivity toward critical business environments.
 
 ## Target Architecture
 
@@ -45,10 +45,10 @@ At a high level:
                  │                   │
                  └─────────┬─────────┘
                            │
-                      JB CED
+                   New Datacenter
 ```
 
-The target architecture connected servers and storage directly to ACI leaf infrastructure, with the ACI fabric connecting upstream through a VPC-based design toward the existing Nexus 7000 gateway layer.
+The target architecture connected servers and storage directly to ACI leaf infrastructure, with the ACI fabric connecting upstream through a VPC-based design toward the existing gateway layer.
 
 ## Technical Challenge
 
@@ -79,17 +79,17 @@ My activities included:
 
 ## Existing Connectivity Analysis
 
-The planning included detailed interface mapping of the existing Nexus 5000 and Nexus 7000 infrastructure.
+The planning included detailed interface mapping of the existing switching and gateway infrastructure.
 
-For example, the JB environment contained existing 10 Gb/s trunk connections between the Nexus 5000 layer and the Nexus 7000 pair, as well as a VPC relationship between Nexus devices.
+The environment contained existing 10 Gb/s trunk connections between switching layers, as well as VPC relationships between network devices.
 
-The analysis also identified existing server interfaces used for management and iSCSI, and storage interfaces connected to the Nexus 5000 infrastructure.
+The analysis also identified existing server interfaces used for management and iSCSI, and storage interfaces connected to the legacy switching infrastructure.
 
 This inventory was necessary to understand which connections could be migrated, which needed to remain temporarily in place and which interfaces needed to be reserved for new equipment.
 
 ## Uplink Expansion
 
-One of the identified requirements was increasing the uplink between the Nexus 7000 layer and the downstream switching environment.
+One of the identified requirements was increasing the uplink between the upstream gateway layer and the downstream switching environment.
 
 The existing architecture had **2 × 10 Gb/s** connectivity. The target planning considered increasing this to **4 × 10 Gb/s**, improving aggregate capacity and providing a more suitable foundation for the new infrastructure.
 
@@ -99,7 +99,7 @@ The work involved identifying available interfaces on the relevant switches, val
 
 A significant architectural decision was to connect the new servers and storage directly to the ACI leaf infrastructure rather than reproducing the legacy connectivity model.
 
-The ACI fabric would then connect upstream using the existing Nexus gateway architecture through a VPC-based trunk design.
+The ACI fabric would then connect upstream using the existing gateway architecture through a VPC-based trunk design.
 
 This approach positioned ACI as the network fabric for the new datacenter while preserving integration with the existing enterprise network.
 
@@ -112,7 +112,7 @@ The migration planning included different types of connectivity:
 - storage interfaces;
 - iSCSI connectivity;
 - network uplinks;
-- VLAN/network segments already available in the corporate network.
+- VLAN/network segments already available in the enterprise network.
 
 The planning also considered future storage interfaces that depended on the arrival of new equipment, requiring ports to be identified and reserved in advance.
 
@@ -161,8 +161,7 @@ The migration required both physical planning — ports, links, cabling and equi
 ## Skills Demonstrated
 
 - Cisco ACI
-- Cisco Nexus 5000
-- Cisco Nexus 7000
+- Cisco Nexus
 - VPC
 - VLAN / trunk connectivity
 - 10 Gb/s Ethernet
@@ -177,12 +176,12 @@ The migration required both physical planning — ports, links, cabling and equi
 
 ## Outcome / Value
 
-The planning established the technical foundation for moving the JB environment toward a newer ACI-based datacenter architecture while preserving integration with the existing network.
+The planning established the technical foundation for moving the environment toward a newer ACI-based datacenter architecture while preserving integration with the existing network.
 
 The work also provided a structured inventory of existing connectivity and dependencies, supporting safer migration planning and reducing the risk of overlooking critical server, storage or management connections.
 
 ## Confidentiality
 
-This case has been generalized for portfolio purposes. Production IP addresses, serial numbers, hostnames, rack identifiers, exact port assignments and other company-specific operational information have been removed.
+This case has been generalized for portfolio purposes. Company names, people, datacenter identifiers, production IP addresses, serial numbers, hostnames, rack identifiers, exact port assignments and other company-specific operational information have been removed.
 
 The architecture presented here represents the design approach and technical relationships without reproducing the production topology in operational detail.
