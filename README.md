@@ -2,70 +2,66 @@
 
 ## Technical Infrastructure Portfolio
 
-Documentação técnica, troubleshooting, arquitetura e estudos práticos sobre Infraestrutura de TI, Redes, Datacenter, Cloud e Segurança.
+Documentação técnica, arquitetura, implementação e estudos práticos sobre Infraestrutura de TI, Redes, Datacenter, Cloud e Segurança.
 
-Este repositório também funciona como portfólio técnico, consolidando conhecimentos e experiências práticas desenvolvidas ao longo da carreira em ambientes corporativos e de infraestrutura crítica.
+Este repositório também funciona como portfólio técnico, consolidando conhecimentos e experiências práticas desenvolvidas ao longo da carreira em ambientes corporativos.
 
 ## Objetivo
 
-Demonstrar capacidade de compreender, investigar e solucionar problemas de infraestrutura, conectando fundamentos técnicos, análise de causa raiz, disponibilidade, segurança e evolução arquitetural.
+Demonstrar capacidade de compreender ambientes de infraestrutura, analisar requisitos técnicos, planejar mudanças e implementar soluções de redes, datacenter, cloud e segurança.
 
 ## Áreas
 
 - **Redes:** TCP/IP, routing & switching, BGP, OSPF, VLAN, STP, port-channel, vPC e VPN
 - **Cisco:** Nexus, Cisco ACI, arquiteturas Spine-Leaf e datacenter networking
-- **Segurança:** firewalls, Palo Alto, Panorama, políticas, segmentação e troubleshooting
+- **Segurança:** firewalls, Palo Alto, Panorama, iptables, pfSense, políticas, zonas e controle de fluxos
 - **Cloud:** AWS, GCP, OCI, cloud networking e ambientes híbridos
-- **Datacenter:** alta disponibilidade, virtualização, conectividade e continuidade
-- **Observabilidade:** monitoramento, análise de disponibilidade, performance e troubleshooting
-- **Troubleshooting:** metodologia de investigação, hipóteses, evidências, causa raiz e prevenção
+- **Datacenter:** alta disponibilidade, virtualização, conectividade, storage e modernização
+- **Implementação:** configuração de interfaces, conectividade, uplinks, políticas e mudanças de infraestrutura
+- **Documentação:** levantamento de ambientes, mapeamento de interfaces, As-Is / To-Be e planejamento técnico
 
 ## Technical Cases
 
-### 01 — Network Troubleshooting
-Investigação estruturada de problemas de conectividade em ambientes corporativos.
+### 01 — Network Implementation
+Experiência prática com configuração de conectividade, interfaces, BGP, port-channel e ACLs em ambientes de infraestrutura.
 
 → [Read the case](07-CASES/01-network-troubleshooting.md)
 
 ### 02 — BGP & Routing
-Fundamentos, análise de rotas e abordagem de troubleshooting para ambientes com BGP.
+Configuração de conectividade e aplicação de conceitos de routing em ambientes corporativos.
 
 → [Read the case](07-CASES/02-bgp-routing.md)
 
 ### 03 — Cisco ACI & Datacenter
-Visão prática de Cisco ACI, Spine-Leaf, conectividade e investigação de problemas em datacenter.
+Implementação e planejamento de conectividade em ambientes Cisco Nexus e Cisco ACI.
 
 → [Read the case](07-CASES/03-cisco-aci-datacenter.md)
 
 ### 04 — Firewall & Network Security
-Análise de políticas, fluxo de tráfego e troubleshooting envolvendo segurança de rede.
+Configuração de políticas, zonas e fluxos de acesso em diferentes plataformas de firewall.
 
 → [Read the case](07-CASES/04-firewall-security.md)
 
 ### 05 — Cloud Connectivity
-Análise de conectividade e dependências em ambientes híbridos e multicloud.
+PoC de infraestrutura para aplicação Avid PAM/MAM em Google Cloud, integrada a ambiente on-premises.
 
 → [Read the case](07-CASES/05-cloud-connectivity.md)
 
-### 06 — Infrastructure Modernization
-Perspectiva técnica sobre evolução de infraestrutura envolvendo datacenter, virtualização, redes e cloud.
+### 06 — Storage Modernization
+Modernização de storage e evolução da conectividade de datacenter para uma arquitetura integrada ao Cisco ACI.
 
 → [Read the case](07-CASES/06-infrastructure-modernization.md)
 
-## Methodology
+### 07 — Datacenter Migration to Cisco ACI
+Planejamento de migração de conectividade para um novo datacenter baseado em Cisco ACI, incluindo expansão de uplinks e mapeamento de servidores e storage.
 
-Os casos seguem uma abordagem orientada a diagnóstico e causa raiz:
+→ [Read the case](07-CASES/07-datacenter-migration.md)
 
-1. Contexto
-2. Problema e impacto
-3. Sintomas observados
-4. Hipóteses iniciais
-5. Coleta de evidências
-6. Análise técnica
-7. Identificação da causa raiz
-8. Correção
-9. Validação
-10. Ações preventivas
+## Working Approach
+
+Os cases técnicos são estruturados a partir de requisitos, contexto do ambiente, dependências, planejamento, implementação e validação, conforme aplicável a cada iniciativa.
+
+Quando troubleshooting ou RCA não fez parte da responsabilidade direta, o case não atribui essa atividade ao autor. O objetivo é representar com precisão o tipo de atuação técnica realizada.
 
 ## Confidentiality
 
@@ -77,7 +73,7 @@ Os exemplos representam conhecimentos, responsabilidades e contextos técnicos r
 
 Profissional de Tecnologia com mais de 15 anos de experiência em Infraestrutura de TI, Redes, Datacenter, Cloud e ambientes híbridos, com experiência adicional como Technical Product Owner em ambientes corporativos complexos.
 
-O diferencial está na combinação entre conhecimento técnico hands-on, visão sistêmica de infraestrutura e capacidade de estruturar problemas, prioridades, dependências e soluções.
+O diferencial está na combinação entre conhecimento técnico hands-on, visão sistêmica de infraestrutura e capacidade de estruturar problemas, requisitos, dependências e soluções.
 
 ## Related Portfolio
 
