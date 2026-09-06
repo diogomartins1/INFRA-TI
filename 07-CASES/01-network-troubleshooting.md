@@ -1,101 +1,87 @@
-# Case 01 — Network Troubleshooting
-
-## Objective
-
-Demonstrate a structured approach to diagnosing connectivity problems in enterprise network environments.
+# Case 01 — Network Configuration & Implementation
 
 ## Context
 
-Enterprise infrastructure depends on multiple interconnected layers: endpoints, VLANs, switching, routing, security controls, physical links and upstream services. A connectivity symptom does not necessarily indicate a failure in the component where the problem is first observed.
+Hands-on network infrastructure activities involving the configuration of switch interfaces and connectivity parameters in enterprise environments.
 
-## Problem
+The work included implementation tasks associated with routing, switching and network access controls.
 
-A service or endpoint becomes intermittently or completely unreachable, requiring investigation across the network path.
+## Scope of Activity
 
-## Investigation approach
+My practical experience included configuration of:
 
-### 1. Define the symptom
+- switch interfaces;
+- BGP-related connectivity;
+- port-channel;
+- access control lists (ACLs);
+- trunk and access connectivity, according to the requirements of each environment.
 
-- What source and destination are affected?
-- Is the failure total or intermittent?
-- Does it affect one host, one VLAN, one site or multiple locations?
-- When did the behavior begin?
-- Was there a recent change?
+The activity was primarily focused on **implementation and configuration**, rather than ownership of N3 incident troubleshooting or root-cause analysis.
 
-### 2. Establish the network path
+## My Role
 
-Validate the expected path through:
+As a network/infrastructure analyst, I received the technical requirements and translated them into the corresponding switch configuration.
 
-- endpoint and gateway
-- VLAN and switching layer
-- routing table
-- next-hop reachability
-- firewall/security controls
-- destination service
+This required understanding the intended connectivity, identifying the appropriate interfaces and applying the configuration according to the existing network architecture and standards.
 
-### 3. Collect evidence
+## Implementation Flow
 
-Useful evidence includes:
+```text
+Technical requirement
+        ↓
+Understand intended connectivity
+        ↓
+Identify devices and interfaces
+        ↓
+Review existing configuration
+        ↓
+Prepare network configuration
+        ↓
+Implement change
+        ↓
+Validate configuration / connectivity
+```
 
-- interface status and counters
-- VLAN membership
-- MAC address tables
-- ARP information
-- routing tables
-- BGP/OSPF state where applicable
-- packet loss and latency
-- firewall session and policy logs
-- monitoring history
-- recent configuration changes
+## BGP Configuration
 
-### 4. Form hypotheses
+My experience with BGP was primarily associated with **configuration and implementation of the network interfaces and parameters required for the connectivity**.
 
-Typical hypotheses include:
+The activity involved understanding where the connection should be established and applying the required configuration on the network infrastructure.
 
-- physical or logical link failure
-- incorrect VLAN configuration
-- routing inconsistency
-- asymmetric path
-- interface errors or packet loss
-- firewall policy blocking traffic
-- DNS/service-layer issue
-- recent configuration change
+This portfolio does not represent me as the primary owner of BGP incident investigation or complex N3 root-cause analysis.
 
-### 5. Isolate the fault domain
+## Port-Channel
 
-The objective is to reduce the problem from a broad connectivity symptom to a specific layer, path or component.
+I also worked with port-channel configurations as part of network connectivity implementation.
 
-## Root Cause
+The objective was to establish the required logical aggregation of physical interfaces according to the design and connectivity requirements of the environment.
 
-The root cause should only be declared after the evidence supports the hypothesis. A symptom such as “host cannot connect” is not itself a root cause.
+## Access Control Lists
 
-## Resolution
+ACL configuration was another part of the hands-on network activity.
 
-Apply the minimum corrective action required to restore service, while considering change control, availability and rollback.
+The implementation required understanding the intended traffic and applying the appropriate access-control rules to the relevant network interfaces or devices.
 
-## Validation
+## Technical Skills Demonstrated
 
-After correction:
+- Cisco switching
+- Interface configuration
+- BGP implementation
+- Port-channel
+- ACL
+- VLAN and trunk concepts
+- Network connectivity
+- Change implementation
+- Configuration validation
+- Enterprise network environments
 
-- reproduce the original test
-- validate end-to-end connectivity
-- check interfaces and logs
-- confirm that related services remain healthy
-- monitor for recurrence
+## Important Scope Boundary
 
-## Prevention
+There is an important distinction between **having hands-on experience configuring a technology** and being the primary engineer responsible for incident troubleshooting and RCA.
 
-Where appropriate, document:
+My practical experience represented in this case is the former: **network implementation and configuration**.
 
-- root cause
-- corrective action
-- configuration or process improvement
-- monitoring opportunity
-- operational documentation update
-
-## Technical takeaway
-
-Effective infrastructure troubleshooting is not a sequence of commands. It is a process of hypothesis formation, evidence collection, fault isolation, root-cause analysis and controlled validation.
+That distinction is intentionally maintained to ensure that the portfolio accurately represents my professional experience.
 
 ## Confidentiality
 
